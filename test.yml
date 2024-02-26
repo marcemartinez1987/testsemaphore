@@ -1,0 +1,5 @@
+- name: 'for idempotency, use full-form commands'
+  cisco.iosxr.iosxr_config:
+    lines:
+      - shutdown
+    parents: interface GigabitEthernet0/0/0/1
